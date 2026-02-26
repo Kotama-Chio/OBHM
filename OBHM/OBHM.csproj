@@ -8,10 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="OBHM_MAP\" />
     <Folder Include="OBHM_PATERN\" />
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="MonoGame.Framework.DesktopGL" Version="3.8.4.1" />
     <PackageReference Include="NAudio" Version="2.2.1" />
     <PackageReference Include="Raylib-CsLo" Version="4.2.0.9" />
   </ItemGroup>

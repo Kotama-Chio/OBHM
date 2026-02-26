@@ -1,5 +1,4 @@
-﻿using OBHM.MAP;
-using OBHM.RENDER;
+﻿using OBHM.RENDER;
 
 namespace OBHM
 {

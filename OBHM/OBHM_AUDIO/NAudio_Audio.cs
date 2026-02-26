@@ -1,17 +1,18 @@
-﻿using NAudio;
+﻿using NAudio.Wave;
 
 namespace OBHM.AUDIO
 {
     public class NAudio_Audio : IAudio
     {
+        public WaveOutEvent DeviceOut = new WaveOutEvent();
         public string Name => "NAudio";
         public void Init()
         {
-
+            var waveOut = new WaveOutEvent();
         }
         public void LoadMusic(string path)
         {
-            
+            var file = new Mp3FileReader(path);
         }
         public void UnLoadMusic(string path)
         {
