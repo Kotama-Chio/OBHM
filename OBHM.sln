@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OBHM_CD", "OBHM_CD\OBHM_CD.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OBHM_App", "OBHM_App\OBHM_App.csproj", "{F5A237CB-F939-42D9-9083-FA93962C90B4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OBHM_Library", "OBHM_Library\OBHM_Library.csproj", "{6DFAFC11-B999-48D8-9C39-CF117F423D57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{F5A237CB-F939-42D9-9083-FA93962C90B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F5A237CB-F939-42D9-9083-FA93962C90B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F5A237CB-F939-42D9-9083-FA93962C90B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6DFAFC11-B999-48D8-9C39-CF117F423D57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6DFAFC11-B999-48D8-9C39-CF117F423D57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6DFAFC11-B999-48D8-9C39-CF117F423D57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6DFAFC11-B999-48D8-9C39-CF117F423D57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
