@@ -1,37 +1,36 @@
-﻿using Raylib_cs;
-using System.Buffers.Text;
-using System.Net;
-using System.Text.Json;
+﻿using System.Text.Json;
+using Raylib_cs;
 
 namespace Creative_Dive.CDKeyboard
 {
     public class Keybinds
     {
-        public Dictionary<string, KeyboardKey> Key_Binds {  get; set; }
-
         public Keybinds(Dictionary<string, KeyboardKey> binds)
         {
             Key_Binds = binds;
         }
 
+        public Dictionary<string, KeyboardKey> Key_Binds { get; set; }
+
         public KeyboardKey GetKey(string key)
         {
-            Key_Binds.TryGetValue(key, out KeyboardKey result);
+            Key_Binds.TryGetValue(key, out var result);
             return result;
         }
     }
 
     public class KeyBindsGestion
     {
-        public Keybinds Key_Binds { get; set; }
-        private string KBFilePath { get; set; }
-        public KeyBindsGestion(string KbFilePath) 
+        public KeyBindsGestion(string KbFilePath)
         {
-            Dictionary<string, KeyboardKey> KB = new Dictionary<string, KeyboardKey>();
+            var KB = new Dictionary<string, KeyboardKey>();
             Key_Binds = new Keybinds(KB);
             KBFilePath = KbFilePath;
             WriteKBJson();
         }
+
+        public Keybinds Key_Binds { get; set; }
+        private string KBFilePath { get; }
 
         public void CreateBaseKB(Dictionary<string, KeyboardKey> BaseKB)
         {
@@ -47,8 +46,8 @@ namespace Creative_Dive.CDKeyboard
 
         public void GetBinds(string FilePath)
         {
-            Dictionary<string, KeyboardKey> test = new();
-            Keybinds Keybinds = new Keybinds(test);
+            var test = new Dictionary<string, KeyboardKey>();
+            var Keybinds = new Keybinds(test);
 
             string filecontent = File.ReadAllText(FilePath);
             Keybinds = JsonSerializer.Deserialize<Keybinds>(filecontent);

@@ -5,6 +5,14 @@
         <TargetFramework>net8.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <LangVersion>latestmajor</LangVersion>
     </PropertyGroup>
+
+    <ItemGroup>
+        <ProjectReference Include="..\OBHM_Audio\OBHM_Audio.csproj"/>
+        <ProjectReference Include="..\OBHM_Core\OBHM_Core.csproj"/>
+        <ProjectReference Include="..\OBHM_Graphics\OBHM_Graphics.csproj"/>
+        <ProjectReference Include="..\OBHM_Library\OBHM_Library.csproj"/>
+    </ItemGroup>
 
 </Project>

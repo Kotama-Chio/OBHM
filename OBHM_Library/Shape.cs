@@ -1,7 +1,9 @@
 namespace OBHM_Library
 {
-    public class Shape
+    public enum Shape
     {
-        
+        Square,
+        Circle,
+        Hexagon
     }
 }
